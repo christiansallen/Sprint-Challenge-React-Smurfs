@@ -10,7 +10,12 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      smurfs: []
+      smurfs: [],
+      smurf: {
+        name: "",
+        age: "",
+        height: ""
+      }
     };
   }
   // add any needed code to ensure that the smurfs collection exists on state and it has data coming from the server
@@ -30,6 +35,14 @@ class App extends Component {
       .then(res => this.setState({ smurfs: res.data }))
       .catch(err => console.log(err));
   };
+
+  populateForm = (e, id) => {
+    e.preventDefault();
+    let selected = this.state.smurfs.find(smurf => smurf.id === id);
+    console.log(selected);
+  };
+
+  edit = () => {};
 
   render() {
     return (
@@ -51,6 +64,7 @@ class App extends Component {
               {...props}
               smurfs={this.state.smurfs}
               delete={this.delete}
+              populateForm={this.populateForm}
             />
           )}
         />

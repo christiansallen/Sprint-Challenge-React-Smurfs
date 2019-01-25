@@ -42,7 +42,7 @@
 .Smurf {
   border: 2px solid rgb(216, 213, 213);
   border-radius: 10px;
-  height: 150px;
+  height: 175px;
   width: 40%;
   display: flex;
   flex-wrap: wrap;
@@ -80,4 +80,13 @@
 .delete {
   width: 30%;
   margin: 0 auto;
+}
+
+.edit {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.buttons {
+  display: flex;
 }
