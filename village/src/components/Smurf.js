@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Smurf = props => {
   return (
@@ -6,15 +6,22 @@ const Smurf = props => {
       <h3>{props.name}</h3>
       <strong>{props.height} tall</strong>
       <p>{props.age} smurf years old</p>
+      <div className="buttons">
+        <button className="edit" onClick={e => props.populateForm(e, props.id)}>
+          Edit Smurf
+        </button>
+        <button className="delete" onClick={e => props.delete(e, props.id)}>
+          Delete Smurf
+        </button>
+      </div>
     </div>
   );
 };
 
 Smurf.defaultProps = {
-  name: '',
-  height: '',
-  age: ''
+  name: "",
+  height: "",
+  age: ""
 };
 
 export default Smurf;
-

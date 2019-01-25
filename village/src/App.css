@@ -1,3 +1,92 @@
 .App {
   text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: rgb(64, 160, 238);
+}
+
+.nav-bar {
+  border-bottom: 2px solid white;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
+  align-items: center;
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  margin-top: 30px;
+}
+
+.nav-item:hover {
+  font-size: 20px;
+}
+
+.Smurfs {
+  margin-top: 40px;
+  color: rgba(255, 255, 255, 0.836);
+  padding-bottom: 40px;
+}
+
+.smurf-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-left: 5.5%;
+  width: 100%;
+}
+
+.Smurf {
+  border: 2px solid rgb(216, 213, 213);
+  border-radius: 10px;
+  height: 175px;
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.SmurfForm h2 {
+  color: white;
+  font-size: 36px;
+}
+
+.form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.input {
+  width: 40%;
+  text-align: center;
+  height: 30px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.add {
+  font-size: 25px;
+  color: rgb(64, 160, 238);
+  background-color: white;
+}
+
+.delete {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.edit {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.buttons {
+  display: flex;
 }
